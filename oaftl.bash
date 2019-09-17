@@ -6,7 +6,7 @@ while getopts ":hvd:" opt; do
   case ${opt} in
     h )
         echo -e $helpfile
- exit
+       exit
       ;;
     d )
         tail -f -n +1 "$2" | grep --line-buffered "$3"
