@@ -1,8 +1,8 @@
 #!/bin/bash
-helpfile="\n\nHey, good you tried this! We are happy to show you the help file:\n\n
-                 Usage - $0  'directory to file' 'searchword'\n\nShow help with $0 -h\n\n
-                   This program searches for a searchword and printes that line in a live file\n\n"
-while getopts ":hd:" opt; do
+version=1.1
+helpfile="\n\n Usage - $0  'directory to file' 'searchword'\n\nShow help with $0 -h\n\n
+               This program searches for a searchword and printes that line in a live file\n\n"
+while getopts ":hvd:" opt; do
   case ${opt} in
     h )
         echo -e $helpfile
@@ -17,6 +17,10 @@ while getopts ":hd:" opt; do
     : )
       echo "Invalid option: '$OPTARG' requires an argument" 1>&2
       ;;
+    v )
+      echo "Version: $version"
+      ;;
   esac
 done
+if [ $OPTIND -eq 1 ]; then echo -e "\n\nNo options were passed\n$helpfile"; fi
 shift $((OPTIND -1))
