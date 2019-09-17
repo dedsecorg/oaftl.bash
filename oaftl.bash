@@ -2,7 +2,7 @@
 #Variables for making easy changes.
 version=1.1 #Version number
 description="This program searches for a searchword and printes that line in a live file|\n|\n|"
-helpfile="|                                   OAFTL                                       |\n|                                                                               |\n|Usage - $0  'directory to file' 'searchword'                       |                                          \n|Show this help menu with $0 -h                                     |\n|                                                                               |\n|                                                                               |"
+helpfile="________________________________________________________________________________\n|                                   OAFTL                                       |\n|                                                                               |\n|Usage - $0  'directory to file' 'searchword'                       |                                          \n|Show this help menu with $0 -h                                     |\n|                                                                               |\n|                                                                               |\n________________________________________________________________________________"
 #Options:
 while getopts ":hvd:" opt; do
   case ${opt} in
