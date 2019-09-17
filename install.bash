@@ -1,7 +1,6 @@
 !#/bin/bash
-apt-get install wget tail grep -y
-cd /tmp
-rm oaftl.bash
+apt-get install wget tail grep -y #install dependencies
+rm /tmp/oaftl.bash*
 rm -rf /usr/bin/oaftl.bash
 rm -rf /usr/bin/oaftl
 wget /tmp/oaftl.bash https://raw.githubusercontent.com/godzillamesel/oaftl.bash/master/oaftl.bash
