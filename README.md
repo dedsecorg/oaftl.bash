@@ -8,8 +8,23 @@ Oneliner installation script "wget -O- https://raw.githubusercontent.com/godzill
 
 
 Manually installation is easy, gonna explain later.
-You have to:
+Paranoid version first (remove # before hitting enter). I am that paranoid dude btw, so had to make a joke about it!
+You just have to:
+```
+apt-get install bash tail grep -y #just to make sure you have the dependencies
+wget https://raw.githubusercontent.com/godzillamesel/oaftl.bash/master/oaftl.bash #download the script
+cat oaftl #to check the script, if you want
+#sudo cp oaftl.bash /usr/bin/oaftl #copy the script to where it can be used everywhere in any directory
+```
+Normal manual version:
+```
+apt-get install bash tail grep -y #just to make sure you have the dependencies
+wget https://raw.githubusercontent.com/godzillamesel/oaftl.bash/master/oaftl.bash #download the script
+cat oaftl #to check the script, if you want
+#sudo cp oaftl.bash /usr/bin/oaftl #copy the script to where it can be used everywhere in any directory
+```
 
-sudo wget https://raw.githubusercontent.com/godzillamesel/oaftl.bash/master/oaftl.bash
-
-sudo cp oaftl.bash /usr/bin/oaftl
+Uninstall with:
+```oaftl -U```
+or
+```rm -rf /usr/bin/oaftl```
