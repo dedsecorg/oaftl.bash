@@ -9,5 +9,7 @@ Oneliner installation script "wget -O- https://raw.githubusercontent.com/godzill
 
 Manually installation is easy, gonna explain later.
 You have to:
+
 sudo wget https://raw.githubusercontent.com/godzillamesel/oaftl.bash/master/oaftl.bash
+
 sudo cp oaftl.bash /usr/bin/oaftl
