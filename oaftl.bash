@@ -23,6 +23,13 @@ while getopts ":hvd:" opt; do
     v )
 	echo "Version: $version"
       ;;
+   U  ) 
+	read -p "Uninstall solicited, continue (y/n)?" choice
+	case "$choice" in 
+  	y|Y ) echo "yes";;
+  	n|N ) echo "no";;
+  	* ) echo "invalid";;
+esac
   esac
 done
  if [ $OPTIND -eq 1 ]
