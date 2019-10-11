@@ -13,7 +13,7 @@ You just have to:
 ```
 apt-get install bash tail grep -y #just to make sure you have the dependencies
 wget https://raw.githubusercontent.com/godzillamesel/oaftl.bash/master/oaftl.bash #download the script
-cat oaftl #to check the script, if you want
+cat oaftl.bash #to check the script, if you want
 #sudo cp oaftl.bash /usr/bin/oaftl #copy the script to where it can be used everywhere in any directory
 ```
 Normal manual version:
