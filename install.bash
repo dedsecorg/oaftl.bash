@@ -19,4 +19,4 @@ echo "Moving  /tmp/oaftl.bash to /usr/bin/oaftl"
 mv /tmp/oaftl.bash /usr/bin/oaftl | echo "Moved file from /tmp/oaftl.bash to /usr/bin/oaftl without errors" || echo "Error moving the file"
 echo -e "Giving permissions to run script\n\n\n"
 chmod +x /usr/bin/oaftl
-echo -e "\n\nIf you did not get any errors above here, then we can say that the installation has finished sucsessfully.\n\n\n"
+echo -e "\n\nIf you did not get any errors above here, then we can say that the installation has finished successfully.\n\n\n"
